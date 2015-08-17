@@ -7,5 +7,6 @@ public class Nameinput
             String input =JOptionPane.showInputDialog("Hi!,What's your name?");
             System.out.print("Hello, ");
             System.out.println(input);
+            
         }
     }
