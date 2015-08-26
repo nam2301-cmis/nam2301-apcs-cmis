@@ -10,12 +10,14 @@ public class FundamentalsP5
         }
         
        System.out.println("\n"+"\n");
-       String[] mySong= {"Wi ing Wi ing","Sleepless","Fear"};
+       String[] mySong= {"Wi ing Wi ing", "Sleepless", "Fear"};
        int num= 0;
        
-       while (num<3)
+       while (num< mySong.length-1)
        {
-           System.out.println(mySong);
+           System.out.print(mySong[num]+",");
+           num++;
        }
+       System.out.print(mySong[mySong.length-1]);
     }
 }
