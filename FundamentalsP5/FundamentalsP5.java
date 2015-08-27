@@ -3,7 +3,7 @@ public class FundamentalsP5
 {
    public static void main(String[] args)
     {
-        String[] myMovie = {"Despicable Me", "Untouchables","Up"};
+        String[] myMovie = {"Despicable Me", "Intouchables","Up"};
         for(int index = 0;index< myMovie.length; index++ )
         {
             System.out.println(myMovie[index]+"\n"+"\n");
