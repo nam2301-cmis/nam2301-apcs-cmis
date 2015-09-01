@@ -16,6 +16,7 @@ public class FundamentalsP7
             {
                 numbers[index] = (int)((Math.random()*100));
                 positive++;
+                
 
             }
 
@@ -33,6 +34,7 @@ public class FundamentalsP7
             index++;
         }
         
+        
         for(int random=0 ; random < numbers.length ; random++ )
         {
             if (numbers[random] > 0)
@@ -41,9 +43,10 @@ public class FundamentalsP7
                 
                 
             }
-            
+           
         }
         
+        System.out.println("The amount of positive integer(s)"+positive);
         
 
     }
