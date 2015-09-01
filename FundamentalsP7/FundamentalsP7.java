@@ -4,24 +4,47 @@ public class FundamentalsP7
     public static void main(String[] args)
     {
         int[] numbers = new int[10];
-        for (int index = 0; index < numbers.length;index++)
-        if
-        {
-            numbers[index] = (int)((Math.random()*100));
-        }
+        int positive=0;
+        int negative=0;
         
-        else
+        for (int index = 0; index < numbers.length;index++)
         {
-            numbers[index] = (int)((Math.random()*100)*-1);
-        }
-       
+            int random=(int)(Math.random()*100);
+            
+           
+            if(random%2==0)
+            {
+                numbers[index] = (int)((Math.random()*100));
+                positive++;
+
+            }
+
+            else
+            {
+                numbers[index] = (int)((Math.random()*100)*-1);
+                negative++;
+            }
+        }  
+
         int index= 0;
-        while(index<100);
+        while(index<10)
         {
             System.out.println(numbers[index]);
             index++;
         }
         
-    }
+        for(int random=0 ; random < numbers.length ; random++ )
+        {
+            if (numbers[random] > 0)
+            {
+                System.out.print(numbers[random] + " ");
+                
+                
+            }
+            
+        }
+        
+        
 
+    }
 }
