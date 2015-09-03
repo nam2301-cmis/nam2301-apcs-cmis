@@ -46,7 +46,7 @@ public class FundamentalsP7
            
         }
         
-        System.out.println("The amount of positive integer(s)"+positive);
+        System.out.println("The amount of positive integer(s) "+positive);
         
 
     }

@@ -16,11 +16,11 @@ public class FundamentalsP2
             }
             if (a < b)
             {
-                System.out.println("The value of a is" + a + " and it is less than b whose value is" + b + ".");
+                System.out.println("The value of a is " + a + " and it is less than b whose value is " + b + ".");
             }
             if (a == b)
             {
-                System.out.println("THe value of a is" + a + " and it is equal to b whos value is" + b + ".");
+                System.out.println("THe value of a is " + a + " and it is equal to b whos value is " + b + ".");
             }
         }
     }

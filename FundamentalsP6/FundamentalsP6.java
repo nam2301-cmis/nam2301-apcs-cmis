@@ -11,7 +11,7 @@ public class FundamentalsP6
         }
         for(int index = 0; index < randomNumbers.length;index++)
         {
-           System.out.println(randomNumbers[index]);
+           System.out.print(randomNumbers[index]+" ");
         }
     }
 
