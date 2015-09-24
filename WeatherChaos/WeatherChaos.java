@@ -8,12 +8,13 @@ public class WeatherChaos
        int[] date;
        int thisNumber;
        int[] random = new int[200];
+       //for random numbers
        int Arrayrandom;
        date=new int[num];
        int min=99;
        int max=-100;
        int sum = 0;
-       System.out.println("Day");
+       System.out.println("Day"+"\t"+"temp"+"\t"+"swing"+"\t"+"description");
        if(num<=0)
        {
            System.out.println("That's not a valid number of days!");
@@ -21,21 +22,12 @@ public class WeatherChaos
        
        else
        {
-           for(int index=1;index<date.length;index++)
+           for(int index=0;index<=date.length;index++)
            {   
-               thisNumber=num;
-               date[index] = thisNumber; 
-               System.out.println(index);
-
-           }
-       }
-       for(int i=0;i<date.length;i++)
-       {
           Arrayrandom = (int)(Math.random()*200)-100;
-          date[i]=Arrayrandom;
-          System.out.println(Arrayrandom);
-          
-          
+     
+          System.out.println(num+"\t"+Arrayrandom);
+        
           if(Arrayrandom<min)
           {
               min = Arrayrandom;
@@ -47,12 +39,19 @@ public class WeatherChaos
           }
           
           sum+=Arrayrandom;
+
+           }
+       }
+       
+       for(int i=0;i<date.length;i++)
+       {
+          
           
        }
-       System.out.println("The minimum temperature was"+min);
-       System.out.println("The maximum temperature was"+max);
-       System.out.println("The sum temperature was"+sum);
-       System.out.println("The average temperature was"+(double)sum/(double)num);
+       System.out.println("The minimum temperature was "+min);
+       System.out.println("The maximum temperature was "+max);
+       System.out.println("The sum temperature was "+sum);
+       System.out.println("The average temperature was "+(double)sum/(double)num);
        
    }
 }
