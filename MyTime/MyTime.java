@@ -8,13 +8,13 @@ public class MyTime
     //constructor 
     public MyTime()
     {
-        hour = 15;
+        hours = 15;
         minutes = 45;
         seconds = 23;
     }
     
     //three-argument constructor
-    public Mytime(int hours,int minutes, int seconds)
+    public MyTime(int hours,int minutes, int seconds)
     {
         this.hours=hours;
         this.minutes=minutes;
@@ -25,7 +25,7 @@ public class MyTime
     public String toString()
     {
         String output= new String();
-        output="The time is "+hours + ":" + minutes + ":" + seconds;
+        output="The time is "+String.format("%02d",hours) + ":" +String.format("%02d", minutes) + ":" + String.format("%02d",seconds);
         return output;
     }
     
