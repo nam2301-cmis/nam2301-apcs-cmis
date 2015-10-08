@@ -1,12 +1,12 @@
 public class MySong
 {
-    //variables
+    //1.instances
     private int year;
     private double length;
     private String name;
     private String artist;
     
-    //constructor zero argument because there is nothing in ()
+    //2.constructor zero argument because there is nothing in ()
     public MySong()
     {
         year = 2014;
@@ -15,6 +15,7 @@ public class MySong
         artist = new String("Coldplay");
     }
     
+    //three-argument constructor 
     public MySong(int year, double length, String name, String artist)
     {
         this.year=year;
@@ -23,4 +24,11 @@ public class MySong
         this.artist= new String(artist);
     }
     
+    //3.toString() turn into a string to print 
+    public String toString()
+    {
+        String output = new String();
+        output="The name of the song is: " + name + " by "+ artist +"."+ "\n"+ "The song came out in " + year +" and it is " + length +" minutes long.";
+        return output;
+    }
 }// end class MySong

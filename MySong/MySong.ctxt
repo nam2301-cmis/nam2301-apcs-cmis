@@ -3,4 +3,6 @@ comment0.params=
 comment0.target=MySong()
 comment1.params=year\ length\ name\ artist
 comment1.target=MySong(int,\ double,\ java.lang.String,\ java.lang.String)
-numComments=2
+comment2.params=
+comment2.target=java.lang.String\ toString()
+numComments=3
