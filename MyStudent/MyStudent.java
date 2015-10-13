@@ -30,7 +30,7 @@ public class MyStudent
     public String toString()
     {
         String output = new String();
-        output = "First name: " + first+"/n"+"Last name: "+last+"/n"+"Grade: "+grade+"/n"+"Student ID: "+id+"/n"+"GPA: "+gpa+"/n";
+        output = "First name: " + first+"\n"+"Last name: "+last+"\n"+"Grade: "+grade+"\n"+"Student ID: "+id+"\n"+"GPA: "+gpa+"\n";
         return output;
     }
     
