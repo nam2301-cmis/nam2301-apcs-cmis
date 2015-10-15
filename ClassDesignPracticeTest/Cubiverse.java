@@ -2,7 +2,7 @@ public class Cubiverse
 {
     //instances
     private int numCubiverses;
-    private double x,y,z;
+    private double x,y,z,dfromleft,dfrombottom,dfromback;
     private int w,h,d;
     private String name;
    
@@ -16,10 +16,44 @@ public class Cubiverse
         w = 1;
         h = 1;
         d = 1;
-        name= new String("Default Cubiverse");
-        //volume = w*h*d;
+        dfromleft=x*w;
+        dfrombottom=y*h;
+        dfromback=z*d;
+        name= new String("Default Cubiverse ")+Math.random();
+        
         
     }
+    
+    //multi arguments part A
+    public Cubiverse(int w, int h, int d,String name)
+    {
+        this.w=w;
+        this.h=h;
+        this.d=d;
+        this.name=name;
+        x=0.50;
+        y=0.50;
+        z=0.50;
+        dfromleft=x*w;
+        dfrombottom=y*h;
+        dfromback=z*d;
+    }
+    
+    //multi arguments part B
+    public Cubiverse(double x, double y, double z, String name)
+    {
+        this.x=x;
+        this.y=y;
+        this.z=z;
+        this.name=name;
+        w=1;
+        h=1;
+        d=1;
+        dfromleft=x*w;
+        dfrombottom=y*h;
+        dfromback=z*d;
+    }
+   
     
     public String toString()
     {
@@ -32,9 +66,9 @@ public class Cubiverse
                 "x: "+ x +"\n"+
                 "y: "+ y +"\n"+
                 "z: "+ z +"\n"+
-                "distance from left: "+ x+"\n"+
-                "distance from bottom: "+ y+"\n"+
-                "distance from back: "+ z;
+                "distance from left: "+ dfromleft+"\n"+
+                "distance from bottom: "+ dfrombottom+"\n"+
+                "distance from back: "+ dfromback;
         return output;
     }
 }
