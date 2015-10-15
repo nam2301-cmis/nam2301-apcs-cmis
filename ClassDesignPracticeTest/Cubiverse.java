@@ -63,12 +63,12 @@ public class Cubiverse
                 "h: "+ h +"\n"+
                 "d: "+ d +"\n"+
                 "volume: "+ w*h*d+ "\n"+
-                "x: "+ x +"\n"+
-                "y: "+ y +"\n"+
-                "z: "+ z +"\n"+
-                "distance from left: "+ dfromleft+"\n"+
-                "distance from bottom: "+ dfrombottom+"\n"+
-                "distance from back: "+ dfromback;
+                "x: "+ String.format("%.2f",x) +"\n"+
+                "y: "+ String.format("%.2f",y) +"\n"+
+                "z: "+ String.format("%.2f",z) +"\n"+
+                "distance from left: "+ String.format("%.2f",dfromleft)+"\n"+
+                "distance from bottom: "+ String.format("%.2f",dfrombottom)+"\n"+
+                "distance from back: "+ String.format("%.2f",dfromback);
         return output;
     }
 }
