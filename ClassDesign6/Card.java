@@ -18,12 +18,13 @@ public class Card
         this.suit=suit;
     }//end multi arguments constructor
     
-     //toString()
+    //toString()
     public String toString()
     {
         String output = new String();
         output="The card in my hand is "+suit+rank;
         return output;
     }// end toString
+    
+}//end card
 
-}

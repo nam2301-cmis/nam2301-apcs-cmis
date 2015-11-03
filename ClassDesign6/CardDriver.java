@@ -11,5 +11,5 @@ public class CardDriver
          MyHand[i]= new Card(suit[(int)(Math.random()*4)],rank[(int)(Math.random()*13)]);
          System.out.println(MyHand[i]);
         }
-    }
-}       
+    }//end public static void main
+}// end class        
