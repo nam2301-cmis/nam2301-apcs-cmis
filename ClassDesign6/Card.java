@@ -1,8 +1,8 @@
 public class Card
 {
     //instances 
-    private String rank;
-    private String suit;
+    public String rank;
+    public String suit;
     
     //zero argument
     public Card()
