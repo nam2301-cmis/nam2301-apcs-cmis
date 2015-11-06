@@ -10,6 +10,7 @@ public class BlackJack
         Card P3[]=new Card[2];
         Card P4[]=new Card[2];
         Card P5[]=new Card[2];
+        //empty string to hold the values
         int Value = 0;
         int ValueD = 0; 
         int Value1 = 0; 
@@ -25,14 +26,15 @@ public class BlackJack
         String player5;
         
         String rank[]={"2","3","4","5","6","7","8","9","10","J","Q","K","A"};
-        int score[]= {1,2,3,4,5,6,7,8,9,10,10,10,10};
+       
         String suit[]={"♠","♥","♦","♣"};
         //Dealer
+       
         for(int i=0;i<Dealer.length;i++)
         {
-            Dealer[i]= new Card(suit[(int)(Math.random()*3)],rank[(int)(Math.random()*13)]);;
-            System.out.println("Dealer "+Dealer[i]);
-            if (Dealer[i].rank == "J" )
+            Dealer[i]= new Card(rank[(int)(Math.random()*13)],suit[(int)(Math.random()*3)]);;
+            System.out.println("Dealer "+Dealer[i].rank);
+            if (Dealer[i].rank == ("J") ) 
              {
                 Value = 10;
             }
@@ -93,22 +95,23 @@ public class BlackJack
                 Value = 10;
              }     
           ValueD += Value;
-           if (Value1>21)
+          
+           if (ValueD>21)
            {
                ValueD=Value-10;
           }//end if for the dealer
-          dealer=(Integer.toString(ValueD));
-           System.out.print("Dealer's score : "+dealer+ "\n");
+         
         }
+        dealer=(Integer.toString(ValueD));
+        System.out.print("Dealer's score : "+ValueD+ "\n");
         
         //Player1
         for(int i=0;i<P1.length;i++)
         {
-            int thecard=((int)(Math.random()*13));
-            int thesuit=((int)(Math.random()*4));
-            P1[i]=  new Card(suit[(int)(Math.random()*3)],rank[(int)(Math.random()*13)]);
+            
+            P1[i]=  new Card(rank[(int)(Math.random()*13)],suit[(int)(Math.random()*3)]);
             System.out.println("Player1 "+P1[i]);
-            if (P1[i].rank == "J" )
+            if (P1[i].rank == ("J") )
              {
                 Value = 10;
             }
@@ -173,19 +176,19 @@ public class BlackJack
            {
                Value1=Value-10;
           }//end if for p1
-          player1=(Integer.toString(Value1));
-           System.out.print("Dealer's score : "+player1+ "\n");
+         
+           
         }
-        
+         player1=(Integer.toString(Value1));
+        System.out.print("Player1's score : "+player1+ "\n");
         
         //Player2
         for(int i=0;i<P2.length;i++)
         {
-            int thecard=((int)(Math.random()*13));
-            int thesuit=((int)(Math.random()*4));
-            P2[i]=  new Card(suit[(int)(Math.random()*3)],rank[(int)(Math.random()*13)]);
+            
+            P2[i]=  new Card(rank[(int)(Math.random()*13)],suit[(int)(Math.random()*3)]);
             System.out.println("Player2 "+P2[i]);
-           if (P1[i].rank == "J" )
+           if (P2[i].rank == ("J") )
              {
                 Value = 10;
             }
@@ -250,23 +253,22 @@ public class BlackJack
            {
                Value2=Value-10;
           }//eng if for p2
-          player2=(Integer.toString(Value1));
-           System.out.print("Dealer's score : "+player2+ "\n");
+          
         }
-        
+        player2=(Integer.toString(Value2));
+        System.out.print("Player2's score : "+player2+ "\n");
         
         //Player3
         for(int i=0;i<P3.length;i++)
         {
-            int thecard=((int)(Math.random()*13));
-            int thesuit=((int)(Math.random()*4));
-            P3[i]=  new Card(suit[(int)(Math.random()*3)],rank[(int)(Math.random()*13)]);
+            
+            P3[i]=  new Card(rank[(int)(Math.random()*13)],suit[(int)(Math.random()*3)]);
             System.out.println("Player3 "+P3[i]);
             if (P3[i].rank == "J" )
              {
                 Value = 10;
             }
-            else if  (P1[i].rank == ("K") )
+            else if  (P3[i].rank == ("K") )
              {
                 Value = 10;
             }
@@ -327,17 +329,16 @@ public class BlackJack
            {
                Value3=Value-10;
           }//end if for p3
-          player3=(Integer.toString(Value3));
-           System.out.print("Dealer's score : "+player3+ "\n");
+         
         }
-        
+         player3=(Integer.toString(Value3));
+         System.out.print("Player3's score : "+player3+ "\n");
         
         //Player4
         for(int i=0;i<P4.length;i++)
         {
-            int thecard=((int)(Math.random()*13));
-            int thesuit=((int)(Math.random()*4));
-            P4[i]=  new Card(suit[(int)(Math.random()*3)],rank[(int)(Math.random()*13)]);
+            
+            P4[i]=  new Card(rank[(int)(Math.random()*13)],suit[(int)(Math.random()*3)]);
             System.out.println("Player4 "+P4[i]);
            if (P4[i].rank == "J" )
              {
@@ -404,17 +405,16 @@ public class BlackJack
            {
                Value4=Value-10;
           }// end if p4
-          player4=(Integer.toString(Value4));
-           System.out.print("Dealer's score : "+player4+ "\n");
+          
         }
-        
+        player4=(Integer.toString(Value4));
+           System.out.print("Player4's score : "+player4+ "\n");
         
         //Player5
         for(int i=0;i<P5.length;i++)
         {
-            int thecard=((int)(Math.random()*13));
-            int thesuit=((int)(Math.random()*4));
-            P5[i]=  new Card(suit[(int)(Math.random()*3)],rank[(int)(Math.random()*13)]);
+           
+            P5[i]=  new Card(rank[(int)(Math.random()*13)],suit[(int)(Math.random()*3)]);
             System.out.println("Player5 "+P5[i]);
              if (P5[i].rank == "J" )
              {
@@ -481,11 +481,97 @@ public class BlackJack
            {
                Value5=Value-10;
           }//end if p5
-          player5=(Integer.toString(Value5));
-           System.out.print("Dealer's score : "+player5+ "\n");
+          
         }
+        player5=(Integer.toString(Value5));
+        System.out.print("Player5's score : "+player5+ "\n");
         
+        if(Value1 == 21)
+        {
+            System.out.println("Player1 has the blackjack and wins");
+        }
+         if(Value1> ValueD)
+        {
+            System.out.println("Player1 wins!");
+        }
+        if(Value1<ValueD)
+        {
+            System.out.println("Player1 loses!");
+        } //end if for p1
         
+        if(Value2 == 21)
+        {
+            System.out.println("Player2 has the blackjack and wins");
+        }
+        if(Value2 > ValueD)
+        {
+            System.out.println("Player2 wins!");
+        }
+        if(Value2<ValueD)
+        {
+            System.out.println("Player2 loses!");
+        } //end if for p2
         
+        if(Value3 == 21)
+        {
+            System.out.println("Player3 has the blackjack and wins");
+        }
+        if(Value3> ValueD)
+        {
+            System.out.println("Player3 wins!");
+        }
+        if(Value3<ValueD)
+        {
+            System.out.println("Player3 loses!");
+        } //end if for p3
+        
+        if(Value4 == 21)
+        {
+            System.out.println("Player4 has the blackjack and wins");
+        }
+        if(Value4> ValueD)
+        {
+            System.out.println("Player4 wins!");
+        }
+        if(Value4<ValueD) 
+        {
+            System.out.println("Player4 loses!");
+        } //end if for p4
+        
+        if(Value5 == 21)
+        {
+            System.out.println("Player5 has the blackjack and wins");
+        }
+        if(Value5> ValueD)
+        {
+            System.out.println("Player5 wins!");
+        }
+        if(Value5<ValueD)
+        {
+            System.out.println("Player5 loses!");
+        } //end if for p5
+        
+        if(Value1 == ValueD)
+        {
+            System.out.println("Dealer Wins player1 the tie!");
+        }
+        if(Value2 == ValueD)
+        {
+            System.out.println("Dealer Wins player2 the tie!");
+        }
+        if(Value3 == ValueD)
+        {
+            System.out.println("Dealer Wins player3 for the tie!");
+        }
+        if(Value4 == ValueD)
+        {
+            System.out.println("Dealer Wins player4 for the tie!");
+        }
+        if(Value5 == ValueD)
+        {
+            System.out.println("Dealer Wins player5 for the tie!");
+        }
     }//end method
 }
+
+
