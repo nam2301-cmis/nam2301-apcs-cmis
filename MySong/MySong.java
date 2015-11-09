@@ -24,6 +24,8 @@ public class MySong
         this.artist= new String(artist);
     }
     
+    
+  
     //3.toString() turn into a string to print 
     public String toString()
     {
