@@ -37,6 +37,12 @@ public class MyTime
         return totalsecs;
     }
     
+    //daylightsaving +1 hour
+    public int convertDaylightSaving(int addhour)
+    {
+        addhour=addhour+hours;
+        return hours;
+    }
     //turn into a string to print
     public String toString()
     {
