@@ -6,6 +6,7 @@ public class MyTime
     private int minutes;
     private int seconds;
     private int totalsecs;
+    private int addhour;
     //constructor 
     public MyTime()
     {
@@ -40,7 +41,7 @@ public class MyTime
     //daylightsaving +1 hour
     public int convertDaylightSaving(int addhour)
     {
-        addhour=addhour+hours;
+        this.hours=this.hours+addhour;
         return hours;
     }
     //turn into a string to print

@@ -23,6 +23,7 @@ public class MyStudent
     {
         this.first=new String(first);
         this.last=new String(last);
+        this.ClassGrades = new double[5]; // creates an array with no info in it.
         this.ClassGrades[0] = GradeEnglish;
         this.ClassGrades[1] = GradeMath;
         this.ClassGrades[2] = GradeScience;
@@ -46,19 +47,20 @@ public class MyStudent
         
     }//end method CalcGPA
     
-    public void setGPA(double GradeEnglish, double GradeMath, double GradeScience, double GradeFineArts, double GradeSocialScience)
+    //set the GPA
+    public void setGPA(double English, double Math, double Science, double FineArts, double SocialScience)
     {
-        this.GradeEnglish=GradeEnglish;
-        this.GradeMath=GradeMath;
-        this.GradeScience=GradeScience;
-        this.GradeFineArts=GradeFineArts;
-        this.GradeSocialScience=GradeSocialScience;
+        this.ClassGrades[0]=English;
+        this.ClassGrades[1]=Math;
+        this.ClassGrades[2]=Science;
+        this.ClassGrades[3]=FineArts;
+        this.ClassGrades[4]=SocialScience;
     }
     
     public String toString()
     {
         String output = new String();
-        output = "First name: " + first+"\n"+"Last name: "+last+"\n"+"Student's average GPA"+ CalcGPA();
+        output = "First name: " + first+"\n"+"Last name: "+last+"\n"+"Student's average GPA "+ CalcGPA();
         return output;
     }
     
