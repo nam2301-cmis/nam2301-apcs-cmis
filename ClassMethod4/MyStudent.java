@@ -3,27 +3,31 @@ public class MyStudent
     //instances 
     private String first;
     private String last;
-    private double[] ClassGrades;
+    private double[] ClassGrades = new double[5];
     private double GradeEnglish;
     private double GradeMath;
     private double GradeScience;
     private double GradeFineArts;
     private double GradeSocialScience;
-    private String A;
-    private String B;
-    private String C;
-    private String D;
-    private String F;
+    private String LetterGPA;
+    private double total=0.0;
+    
     //zero argument
     public MyStudent()
     {
-        first = new String("Chanipa");
-        last = new String("Sangphet");
+        first = new String("John");
+        last = new String("Doe");
+        LetterGPA=" ";
         ClassGrades =new double[5];
+        ClassGrades[0]=4.0;
+        ClassGrades[1]=4.0;
+        ClassGrades[2]=4.0;
+        ClassGrades[3]=4.0;
+        ClassGrades[4]=4.0;
     }
     
     //multi arguments
-    public MyStudent(String first, String last,double GradeEnglish, double GradeMath, double GradeScience, double GradeFineArts, double GradeSocialScience)
+    public MyStudent(String first, String last,double GradeEnglish, double GradeMath, double GradeScience, double GradeFineArts, double GradeSocialScience,String LetterGPA)
     {
         this.first=new String(first);
         this.last=new String(last);
@@ -33,13 +37,12 @@ public class MyStudent
         this.ClassGrades[2] = GradeScience;
         this.ClassGrades[3] = GradeFineArts;
         this.ClassGrades[4] = GradeSocialScience;
-        
+        this.LetterGPA=LetterGPA;
     }
     
     public double CalcGPA()
     {
         double total = 0.0;
-        
         for(int index=0; index<ClassGrades.length;index++)
         {
             //total= total + ClassGrades[index];
@@ -60,37 +63,46 @@ public class MyStudent
         this.ClassGrades[4]=SocialScience;
     }
     
-    public String getGPA()
+    public double[] getClassGrades()
+    {
+        return ClassGrades;
+    }
+    public String GPAletter()
     {
      
-        if(ClassGrades.equals (4.0))
+        
+        if(total>=4.0)
         {
-            return A;
+           LetterGPA="A";
         }
-        if(ClassGrades.equals (2.0))
+        if(total>= 3.0 && total < 4.0)
         {
-            return B;
+            LetterGPA="B";
         }
-        if(ClassGrades.equals (3.0))
+        if(total>=2.0 && total < 3.0)
         {
-            return C;
+            LetterGPA="C";
         }
-        if(ClassGrades.equals (1.0))
+        if(total>=1.0 && total < 2.0)
         {
-            return D;
+            LetterGPA="D";
         }
         else
         {
-            return F;
+            LetterGPA="F";
         }
-    }
+        
+        return LetterGPA;
+    }//end lettergrade
     
     public String toString()
     {
         String output = new String();
         output = "First name: " + first+"\n"+"Last name: "+last+"\n"+"Student's average GPA "+ CalcGPA()+"\n"
-                   +"John's Grade "+getGPA()+"\n"+ClassGrades[0] + " " +ClassGrades[1]+" "+ClassGrades[2]+" "+ClassGrades[3]+" "+ClassGrades[4];
-        return output;
+                   +"John's Grade "+GPAletter()+"\n"+ClassGrades[0] + " " +ClassGrades[1]+" "+ClassGrades[2]+" "+ClassGrades[3]+" "+ClassGrades[4];
+        
+                   return output;
+        
     }
     
 }
