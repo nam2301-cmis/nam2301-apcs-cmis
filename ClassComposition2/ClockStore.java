@@ -16,11 +16,26 @@ public class ClockStore
     
     public int MostSeconds()
      {
+         int max = 0;
          for(int i = 0 ; i < ClocksInStock.length; i++)
          {
+            if(ClocksInStock[i].TotalSeconds()>ClocksInStock[max].TotalSeconds())
+            {
+                max = i;
+            }
             
          }
-         
+         return max;
      }
     
+    public String toString()
+    {
+        String output = new String();
+        output ="The Clock that has the highest total seconds is clock"+ MostSeconds()+"\n";
+        for (Clock x : ClocksInStock)
+        {
+            output += x + "\n";
+        }
+        return output;
+    }
 }
