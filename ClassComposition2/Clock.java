@@ -18,7 +18,7 @@ public class Clock
     {
         this.hours=hours;
         this.minutes=minutes;
-        this.seconds=minutes;
+        this.seconds=seconds;
     }
     
     //convert time to seconds
