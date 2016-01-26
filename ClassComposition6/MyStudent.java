@@ -26,9 +26,9 @@ public class MyStudent
         return this.gpa;
     }
     
-    public String getName()
+    public String getlastName()
     {
-        return this.name;
+        return this.lastname;
     }
     
     public String toString()
