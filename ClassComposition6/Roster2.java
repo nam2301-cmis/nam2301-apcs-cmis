@@ -20,6 +20,12 @@ public class Roster2
     {
         for(int index = 0 ; index<myStudents.size();index++)
         {
+            
+            if (myStudents.get(index).getlastName() == lastName)
+            {
+                myStudents.remove(myStudents.get(index));
+                break;
+            }
         }
     }
 
