@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.params=
-comment0.target=void\ apComputerScience()
+comment0.target=apComputerScience()
 comment1.params=newStudent
 comment1.target=void\ addStudent(MyStudent)
 comment2.params=lastName

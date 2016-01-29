@@ -1,10 +1,10 @@
 import java.util.ArrayList;
-public class Roster2
+public class apComputerScience
 {
    // private MyStudent[] Students;
     
-    ArrayList<MyStudent>myStudents= new ArrayList<MyStudent>();
-    public void apComputerScience()
+    private ArrayList<MyStudent>myStudents= new ArrayList<MyStudent>();
+    public  apComputerScience()
     {
       MyStudent x =new MyStudent("LaLa","Collins",3.455);
       MyStudent y =new MyStudent("LuLu","Smith",3.68);

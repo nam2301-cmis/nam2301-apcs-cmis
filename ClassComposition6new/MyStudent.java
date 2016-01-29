@@ -34,7 +34,7 @@ public class MyStudent
     public String toString()
     {
         String output = new String();
-        output = "Name: " + name+"\n"+gpa+"\n";
+        output = "Name: " + name+" "+ lastname+ "\n"+gpa+"\n";
         return output;
     }
     
