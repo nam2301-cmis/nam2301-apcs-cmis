@@ -7,8 +7,8 @@ public class Roster2
     public void apComputerScience()
     {
       MyStudent x =new MyStudent("LaLa","Collins",3.455);
-      MyStudent y =new MyStudent("LuLu","Collins",3.68);
-      MyStudent z =new MyStudent("Lily","Collins",3.89);
+      MyStudent y =new MyStudent("LuLu","Smith",3.68);
+      MyStudent z =new MyStudent("Lily","Lee",3.89);
       
      myStudents.add(x);
      myStudents.add(y);
