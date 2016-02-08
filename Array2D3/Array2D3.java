@@ -4,22 +4,25 @@ public class Array2D3
 {
     public static void main ( String arg[] )
     {
-        int col = Integer.parseInt(JOptionPane.showInputDialog("Number of column"));
-        int row = Integer.parseInt(JOptionPane.showInputDialog("Number of row"));
-        int number[][] = new int[row][col];
+        int colinput = Integer.parseInt(JOptionPane.showInputDialog("Number of column"));
+        int rowinput = Integer.parseInt(JOptionPane.showInputDialog("Number of row"));
+        int number[][] = new int[rowinput][colinput];
         
-        for (int x = 0; x < col; x++)
+        //printing the index
+        for (int index = 0; index < colinput; index++)
         {
-            System.out.print(x + "\t");
+            System.out.print(index + "\t");
         }
         System.out.print("\n");
-        for(int r = 1; r < number.length; r++)
+        
+        //printing the rest
+        for(int row = 1; row < number.length; row++)
         {
-            System.out.print(r + "\t");
-            for(int c = 1; c < number[0].length; c++)
+            System.out.print(row + "\t");
+            for(int col = 1; col < number[0].length; col++)
              {
-                number[r][c] = (r * c);  
-                System.out.print(number[r][c] + "\t"); 
+                number[row][col] = (row * col);  
+                System.out.print(number[row][col] + "\t"); 
              }
             System.out.print("\n"); 
         }
