@@ -16,27 +16,31 @@ public class Swappers
         int num=0;                           
         int maxrow = 0;
         int maxcol =0;
-        int rowpro=0;
+       int rowpro=0;
         int colpro=0;
         //int intersection=[maxrow][maxcol];
         //getting the no
         for(int row =0;row<grid.length;row++)
         {
+           
             for(int col=0;col<grid.length;col++)
             {
+
                 System.out.print(grid[row][col]+" ");
             }
             System.out.print("\n");
         }
         
+        
          //row timing
         for(int row=0;row<grid.length;row++)
         {
+             
             for(int col=0;col<grid[0].length;col++)
             {
                 if(row!=0)
                 {
-                    rowpro *=grid[row][row];
+                    rowpro=grid[row][row]*1;
                      if(rowpro>maxrow)
                   {
                       maxrow=rowpro;
@@ -46,14 +50,14 @@ public class Swappers
                 
                 if(maxrow==0)
                 {
-                   // intersection;
+                   colpro=maxrow;// intersection;
                 }
                 
             }
-            System.out.print("the max row is "+ rowpro+"\n");
+           
         }
        
-        
+         System.out.print("the max row is "+ maxrow+"\n");
         //col timing
         for(int col=0;col<grid[0].length;col++)
         {
@@ -61,7 +65,7 @@ public class Swappers
             {
                  if(col!=0)
                 {
-                    colpro *=grid[col][col];
+                    colpro=grid[col][col]*1;
                      if(colpro>maxcol)
                   {
                       maxcol=colpro;
@@ -69,15 +73,15 @@ public class Swappers
                 }
                 
                
-                if(maxrow==0)
+                if(maxcol==0)
                 {
-                   // intersection;
+                   colpro=maxcol;// intersection;
                 }
                 
             }
-            System.out.print("the max col is "+ maxcol+"\n");
+            
     }
     
-    
+    System.out.print("the max col is "+ maxcol+"\n");
   }
 }
