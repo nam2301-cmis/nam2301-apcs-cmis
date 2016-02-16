@@ -3,16 +3,16 @@ public class PasswordCreator
 {
     public static void main(String [] args)
     {
-        String lastName = JOptionPane.showInputDialog( "What is your lastname?");
+        String lastname = JOptionPane.showInputDialog( "What is your lastname?");
         String password = JOptionPane.showInputDialog( "What is your password?");
-        int compare = 0;
-        String lastNameLowerCase = lastName.toLowerCase();
+        int x = 0;
+        String lastnameLowerCase = lastname.toLowerCase();
         String passwordLowerCase = password.toLowerCase();
 
-        while(compare >=0)
+        while(x >=0)
         {
-            compare = passwordLowerCase.indexOf(lastNameLowerCase);
-            if(compare >= 0)
+            x = passwordLowerCase.indexOf(lastnameLowerCase);
+            if(x >= 0)
             {
                 passwordLowerCase = JOptionPane.showInputDialog( "What is your password?").toLowerCase();
             }

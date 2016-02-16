@@ -2,9 +2,9 @@ public class jukeboxDriver
 {
    public static void main (String[] args)
    {
-       Jukebox favSongs = new Jukebox();
-       System.out.println(favSongs);
-       System.out.println("A random song: " + favSongs.randomSong());
-       System.out.println("Songs with the rating of 4: " + favSongs.playSongofRating(4));
+       Jukebox PickSong = new Jukebox();
+       System.out.println(PickSong);
+       System.out.println("Random one: " + PickSong.randomSong());
+       System.out.println("Songs with the rating of 5: " + PickSong.playSongofRating(5));
     }
 }

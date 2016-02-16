@@ -28,20 +28,20 @@ public class Jukebox
     public ArrayList<MySong> playSongofRating(int rating)
     {
         
-        ArrayList<MySong> songs = new ArrayList<MySong>();
-        for(int row = 0; row < songList.length; row++)
+        ArrayList<MySong> picksong = new ArrayList<MySong>();
+        for(int col = 0; col < songList[0].length; col++)
         {
-            for(int col = 0; col < songList[0].length; col++)
+            for(int row = 0; row < songList.length; row++)
             {
                 if(songList[row][col].rating == rating)
                 {
-                   songs.add(songList[row][col]);
+                   picksong.add(songList[row][col]);
 
                 } 
             } 
 
         }
-        return songs;
+        return picksong;
     }
 
     public String toString()
@@ -49,9 +49,9 @@ public class Jukebox
         String output = new String();
         for(MySong[] row: songList)
         {
-            for(MySong element: row)
+            for(MySong x: row)
             {
-                 output += element + "\n";
+                 output += x + "\n";
             }
         }
         
