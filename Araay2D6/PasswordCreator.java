@@ -5,14 +5,14 @@ public class PasswordCreator
     {
         String lastName = JOptionPane.showInputDialog( "What is your lastname?");
         String password = JOptionPane.showInputDialog( "What is your password?");
-        int compare = 0;
+        int comparelastandpass = 0;
         String lastNameLowerCase = lastName.toLowerCase();
         String passwordLowerCase = password.toLowerCase();
 
-        while(compare >=0)
+        while(comparelastandpass >=0)
         {
-            compare = passwordLowerCase.indexOf(lastNameLowerCase);
-            if(compare >= 0)
+            comparelastandpass = passwordLowerCase.indexOf(lastNameLowerCase);
+            if(comparelastandpass >= 0)
             {
                 passwordLowerCase = JOptionPane.showInputDialog( "What is your password?").toLowerCase();
             }
