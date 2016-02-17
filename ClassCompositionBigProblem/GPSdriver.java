@@ -12,7 +12,7 @@ public class GPSdriver
         System.out.println("difficulty 3-4 " + trail.Difficulty(3, 4));
         System.out.println("level 5-6 " + trail.Level(5, 6));
 
-        trail.addMarker(new Marker(13,100)	);
+        trail.addmarkers(new markers(13,100)	);
         System.out.println("\nTrail B");
         System.out.println(trail); 
         System.out.println("length " + trail.getLength());
@@ -21,17 +21,17 @@ public class GPSdriver
         System.out.println("difficulty 3-4 " + trail.Difficulty(3, 4));
         System.out.println("level 5-6 " + trail.Level(5, 6));
 
-        ArrayList<Marker> randomMarkers = new ArrayList<Marker>();
-        randomMarkers.add(new Marker(0,10));
-        randomMarkers.add(new Marker(1,10));
-        randomMarkers.add(new Marker(2,10)); 
-        randomMarkers.add(new Marker(3,10));
-        randomMarkers.add(new Marker(4,10));
-        randomMarkers.add(new Marker(5,10));
-        randomMarkers.add(new Marker(6,10));
-        randomMarkers.add(new Marker(7,10));
-        randomMarkers.add(new Marker(8,10));
-        GPSSoftware PlainTrail = new GPSSoftware(randomMarkers);
+        ArrayList<markers> randommarkers = new ArrayList<markesr>();
+        randommarkers.add(new markers(0,10));
+        randommarkers.add(new markers(1,10));
+        randommarkers.add(new markers(2,10)); 
+        randommarkers.add(new markers(3,10));
+        randommarkers.add(new markers(4,10));
+        randommarkers.add(new markers(5,10));
+        randommarkers.add(new markers(6,10));
+        randommarkers.add(new markers(7,10));
+        randommarkers.add(new markers(8,10));
+        GPS PlainTrail = new GPS(randommarkers);
         System.out.println("\nPlainTrail");
         System.out.println(PlainTrail); 
         System.out.println("length " + PlainTrail.getLength());
@@ -50,7 +50,7 @@ public class GPSdriver
         newMarkers.add(new Marker(6,700));
         newMarkers.add(new Marker(7,800));
         newMarkers.add(new Marker(8,900));
-        GPSSoftware MountainTrail = new GPSSoftware(newMarkers);
+        GPS MountainTrail = new GPS(newMarkers);
         System.out.println("\nMountainTrail");
         System.out.println(MountainTrail);
         System.out.println("length " + MountainTrail.getLength());

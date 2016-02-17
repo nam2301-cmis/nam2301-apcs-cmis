@@ -2,22 +2,22 @@ import java.util.ArrayList;
 public class GPS
 
 {
-    public ArrayList<Marker> Trail= new ArrayList<Marker>();
+    public ArrayList<markers> Trail= new ArrayList<markers>();
     public GPS()
     {
-        Trail.add(new Marker(0,100));
-        Trail.add(new Marker(1,150));
-        Trail.add(new Marker(2,105));
-        Trail.add(new Marker(3,120));
-        Trail.add(new Marker(4,90));
-        Trail.add(new Marker(5,80));
-        Trail.add(new Marker(6,50));
-        Trail.add(new Marker(7,75));
-        Trail.add(new Marker(8,75));
-        Trail.add(new Marker(9,70));
-        Trail.add(new Marker(10,80));
-        Trail.add(new Marker(11,90));
-        Trail.add(new Marker(12,100));
+        Trail.add(new markers(0,100));
+        Trail.add(new markers(1,150));
+        Trail.add(new markers(2,105));
+        Trail.add(new markers(3,120));
+        Trail.add(new markers(4,90));
+        Trail.add(new markers(5,80));
+        Trail.add(new markers(6,50));
+        Trail.add(new markers(7,75));
+        Trail.add(new markers(8,75));
+        Trail.add(new markers(9,70));
+        Trail.add(new markers(10,80));
+        Trail.add(new markers(11,90));
+        Trail.add(new markers(12,100));
 
     }
 

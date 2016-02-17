@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 public class Jukebox
 {
-
+    
     MySong[][] songList = new MySong[3][4];
     public Jukebox()
     {
@@ -22,7 +22,7 @@ public class Jukebox
 
     public MySong randomSong()
     {
-        return songList[3*(int)(Math.random())][4*(int)(Math.random())];
+        return songList[(int)(songList.length*Math.random())][(int)(songList[0].length*Math.random())];
     }
 
     public ArrayList<MySong> playSongofRating(int rating)
