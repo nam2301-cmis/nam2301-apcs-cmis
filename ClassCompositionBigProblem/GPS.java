@@ -71,12 +71,12 @@ public class GPS
         }
     }
 
-    public GPS(ArrayList<Marker> Trail)
+    public GPS(ArrayList<markers> Trail)
     {
         this.Trail=Trail;
     }
 
-    public void addMarker ( Marker newMarker )
+    public void addmarker ( markers newMarker )
     {
         Trail.add(newMarker);
     }
@@ -84,7 +84,7 @@ public class GPS
     public String toString()
     {
         String output = "";
-        for (Marker marker : Trail)
+        for (markers marker : Trail)
         {
             output+= marker;
         }

@@ -12,7 +12,7 @@ public class GPSdriver
         System.out.println("difficulty 3-4 " + trail.Difficulty(3, 4));
         System.out.println("level 5-6 " + trail.Level(5, 6));
 
-        trail.addmarkers(new markers(13,100)	);
+        trail.addmarker(new markers(13,100)	);
         System.out.println("\nTrail B");
         System.out.println(trail); 
         System.out.println("length " + trail.getLength());
@@ -21,7 +21,7 @@ public class GPSdriver
         System.out.println("difficulty 3-4 " + trail.Difficulty(3, 4));
         System.out.println("level 5-6 " + trail.Level(5, 6));
 
-        ArrayList<markers> randommarkers = new ArrayList<markesr>();
+        ArrayList<markers> randommarkers = new ArrayList<markers>();
         randommarkers.add(new markers(0,10));
         randommarkers.add(new markers(1,10));
         randommarkers.add(new markers(2,10)); 
@@ -40,16 +40,16 @@ public class GPSdriver
         System.out.println("difficulty 3-4 " + trail.Difficulty(3, 4));
         System.out.println("level 5-6 " + trail.Level(5, 6));
 
-        ArrayList<Marker> newMarkers = new ArrayList<Marker>();
-        newMarkers.add(new Marker(0,100));
-        newMarkers.add(new Marker(1,200));
-        newMarkers.add(new Marker(2,300)); 
-        newMarkers.add(new Marker(3,400));
-        newMarkers.add(new Marker(4,500));
-        newMarkers.add(new Marker(5,600));
-        newMarkers.add(new Marker(6,700));
-        newMarkers.add(new Marker(7,800));
-        newMarkers.add(new Marker(8,900));
+        ArrayList<markers> newMarkers = new ArrayList<markers>();
+        newMarkers.add(new markers(0,100));
+        newMarkers.add(new markers(1,200));
+        newMarkers.add(new markers(2,300)); 
+        newMarkers.add(new markers(3,400));
+        newMarkers.add(new markers(4,500));
+        newMarkers.add(new markers(5,600));
+        newMarkers.add(new markers(6,700));
+        newMarkers.add(new markers(7,800));
+        newMarkers.add(new markers(8,900));
         GPS MountainTrail = new GPS(newMarkers);
         System.out.println("\nMountainTrail");
         System.out.println(MountainTrail);
