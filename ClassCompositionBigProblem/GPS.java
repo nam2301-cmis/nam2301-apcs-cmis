@@ -53,15 +53,15 @@ public class GPS
 
     public boolean Difficulty(int begin, int end)
     {
-        int Uphill = 0;
+        int Up = 0;
         for(int i = 0; i < Trail.size(); i++)
         {
             if(i > 0 && Trail.get(i).getY() - Trail.get(i-1).getY() > 0)
             {
-                Uphill += Trail.get(i).getY(); 
+                Up += Trail.get(i).getY(); 
             }
         }
-        if(Uphill > 100 && !Level(begin, end))
+        if(Up > 100 && !Level(begin, end))
         {
             return true;
         }
