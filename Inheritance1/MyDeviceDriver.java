@@ -3,11 +3,11 @@ public class MyDeviceDriver
 {
     public static void main(String[] args)
     {
-        MyDevice MyDeviceExtend =  new MyDevice();
+        MyDevice Phone =  new MyDevice();
         
         
         ArrayList<MyDevice> x = new ArrayList<MyDevice>();
-        x.add(MyDeviceExtend);
+        x.add(Phone);
         
         for(MyDevice object:object)
         {
