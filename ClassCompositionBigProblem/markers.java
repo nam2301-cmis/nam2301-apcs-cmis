@@ -1,5 +1,7 @@
 public class markers
 {
+    
+    //getting stuff
     private int x;
     private int y;
     public markers( int x, int y)

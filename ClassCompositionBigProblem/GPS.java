@@ -30,13 +30,15 @@ public class GPS
         }
         return length;
     }
-
-    public boolean Level(int begin, int end)
+    
+    
+    // A trail segment is considered level if the first marker and the last marker are at the same elevation and no markers between them are more than 10 meters higher or lower. 
+    public boolean LevelTrailSegment(int begin, int end)
     {
         boolean level=true;
         for( int i = begin; i < end; i++)
         {
-            if( i > begin && Math.abs(Trail.get(i).getY() - Trail.get(i).getY()) > 10)
+            if( i > begin && Math.abs(Trail.get(i).getY() - Trail.get(i-1).getY()) > 10)
             {
                 level = false;
             }                    
@@ -49,9 +51,10 @@ public class GPS
         {
             return false;
         }
-    }
-
-    public boolean Difficulty(int begin, int end)
+   }
+   
+    //A trail segment is considered difficult if it is not level and there is a net elevation gain of 100 or more.
+    public boolean isDifficult(int begin, int end)
     {
         int Up = 0;
         for(int i = 0; i < Trail.size(); i++)
@@ -61,7 +64,7 @@ public class GPS
                 Up += Trail.get(i).getY(); 
             }
         }
-        if(Up > 100 && !Level(begin, end))
+        if(Up > 100 && !LevelTrailSegment(begin, end))
         {
             return true;
         }
