@@ -1,6 +1,8 @@
 #BlueJ class context
-comment0.params=memory\ language
-comment0.target=MyDevice(int,\ java.lang.String)
-comment1.params=
-comment1.target=java.lang.String\ toStrig()
-numComments=2
+comment0.params=
+comment0.target=MyDevice()
+comment1.params=memory\ language
+comment1.target=MyDevice(int,\ java.lang.String)
+comment2.params=
+comment2.target=java.lang.String\ toStrig()
+numComments=3
