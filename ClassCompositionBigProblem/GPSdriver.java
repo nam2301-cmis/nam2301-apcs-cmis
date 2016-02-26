@@ -7,19 +7,19 @@ public class GPSdriver
         System.out.println("\nTrail A");
         System.out.println(trail);
         System.out.println("Distance " + trail.getLength());
-        System.out.println("difficulty " + trail.isDifficult(0, trail.Trail.size()-1));
+        System.out.println("Difficulty " + trail.isDifficult(0, trail.Trail.size()-1));
         System.out.println("level " + trail.LevelTrailSegment(0, trail.Trail.size()-1));
-        System.out.println("difficulty 3-4 " + trail.isDifficult(3, 4));
+        System.out.println("Difficulty 1-2 " + trail.isDifficult(1, 2));
         System.out.println("level 5-6 " + trail.LevelTrailSegment(5, 6));
 
         trail.addmarker(new markers(13,100)	);
         System.out.println("\nTrail B");
         System.out.println(trail); 
         System.out.println("Distance " + trail.getLength());
-        System.out.println("difficulty " + trail.isDifficult(0, trail.Trail.size()-1));
+        System.out.println("Difficulty " + trail.isDifficult(0, trail.Trail.size()-1));
         System.out.println("level " + trail.LevelTrailSegment(0, trail.Trail.size()-1));
-        System.out.println("difficulty 3-4 " + trail.isDifficult(3, 4));
-        System.out.println("level 5-6 " + trail.LevelTrailSegment(5, 6));
+        System.out.println("Difficulty 1-2 " + trail.isDifficult(1, 2));
+        System.out.println("level 3-4 " + trail.LevelTrailSegment(3, 4));
 
         ArrayList<markers> randommarkers = new ArrayList<markers>();
         randommarkers.add(new markers(1,10));
@@ -35,10 +35,10 @@ public class GPSdriver
         System.out.println("\nPlainTrail");
         System.out.println(PlainTrail); 
         System.out.println("Distance " + PlainTrail.getLength());
-        System.out.println("difficulty " + trail.isDifficult(0, trail.Trail.size()-1));
+        System.out.println("Difficulty " + trail.isDifficult(0, trail.Trail.size()-1));
         System.out.println("level " + trail.LevelTrailSegment(0, trail.Trail.size()-1));
-        System.out.println("difficulty 3-4 " + trail.isDifficult(3, 4));
-        System.out.println("level 5-6 " + trail.LevelTrailSegment(5, 6));
+        System.out.println("Difficulty 1-2 " + trail.isDifficult(1, 2));
+        System.out.println("level 7-8 " + trail.LevelTrailSegment(7, 8));
 
         ArrayList<markers> newMarkers = new ArrayList<markers>();
         newMarkers.add(new markers(1,100));
@@ -54,9 +54,9 @@ public class GPSdriver
         System.out.println("\nMountainTrail");
         System.out.println(MountainTrail);
         System.out.println("Distance " + MountainTrail.getLength());
-        System.out.println("difficulty " + trail.isDifficult(0, trail.Trail.size()-1));
+        System.out.println("Difficulty " + trail.isDifficult(0, trail.Trail.size()-1));
         System.out.println("level " + trail.LevelTrailSegment(0, trail.Trail.size()-1));
-        System.out.println("difficulty 3-4 " + trail.isDifficult(3, 4));
+        System.out.println("Difficulty 3-4 " + trail.isDifficult(3, 4));
         System.out.println("level 5-6 " + trail.LevelTrailSegment(5, 6));
     }
 }

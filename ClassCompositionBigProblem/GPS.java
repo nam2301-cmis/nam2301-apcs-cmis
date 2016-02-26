@@ -7,7 +7,7 @@ public class GPS
     {
         Trail.add(new markers(0,100));
         Trail.add(new markers(1,150));
-        Trail.add(new markers(2,105));
+        Trail.add(new markers(2,350));
         Trail.add(new markers(3,120));
         Trail.add(new markers(4,90));
         Trail.add(new markers(5,80));
@@ -43,7 +43,7 @@ public class GPS
                 level = false;
             }                    
         }
-        if( Trail.get(begin) == Trail.get(end) && level == true)
+        if( Trail.get(begin).getY() == Trail.get(end).getY() && level == true)
         {
             return true;
         }
@@ -57,14 +57,16 @@ public class GPS
     public boolean isDifficult(int begin, int end)
     {
         int Up = 0;
-        for(int i = 0; i < Trail.size(); i++)
+     
+        for(int i = begin; i <= end; i++)
         {
-            if(i > 0 && Trail.get(i).getY() - Trail.get(i-1).getY() > 0)
-            {
-                Up += Trail.get(i).getY(); 
+            if(i > begin && Trail.get(i).getY() - Trail.get(i-1).getY() > 0)
+            { 
+                Up += Trail.get(i).getY()-Trail.get(i-1).getY();  
+               
             }
         }
-        if(Up > 100 && !LevelTrailSegment(begin, end))
+        if(Up > 100 && !LevelTrailSegment(begin,end))
         {
             return true;
         }
