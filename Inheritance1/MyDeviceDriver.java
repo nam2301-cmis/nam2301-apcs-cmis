@@ -6,12 +6,12 @@ public class MyDeviceDriver
         MyDevice Phone =  new MyDevice();
         
         
-        ArrayList<MyDevice> x = new ArrayList<MyDevice>();
-        x.add(Phone);
+        ArrayList<MyDevice> object = new ArrayList<MyDevice>();
+        object.add(Phone);
         
-        for(MyDevice object:object)
+        for(MyDevice x:object)
         {
-            System.out.println(object+ "\n");
+            System.out.println(x+ "\n");
         }
     }
 }

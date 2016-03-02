@@ -1,6 +1,16 @@
 #BlueJ class context
-comment0.params=memory\ language\ owner\ version
-comment0.target=Phone(int,\ java.lang.String,\ java.lang.String,\ int)
-comment1.params=
-comment1.target=java.lang.String\ toString()
-numComments=2
+comment0.params=
+comment0.target=Phone()
+comment1.params=memory\ language\ owner\ version
+comment1.target=Phone(int,\ java.lang.String,\ java.lang.String,\ int)
+comment2.params=
+comment2.target=java.lang.String\ getOwner()
+comment3.params=owner
+comment3.target=void\ setOwner(java.lang.String)
+comment4.params=
+comment4.target=int\ getVersion()
+comment5.params=
+comment5.target=void\ setVersion()
+comment6.params=
+comment6.target=java.lang.String\ toString()
+numComments=7
