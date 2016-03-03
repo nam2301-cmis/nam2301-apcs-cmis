@@ -16,6 +16,8 @@ public class MyDevice
     
     public String toStrig()
     {
-        return String.format("Memory: ",memory,"Language ",language);
+        String output = new String("");
+        output ="Memory: "+memory+"\n"+"Language "+language;
+        return output;
     }
 }

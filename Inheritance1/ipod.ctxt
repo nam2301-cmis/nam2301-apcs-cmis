@@ -1,8 +1,8 @@
 #BlueJ class context
 comment0.params=
 comment0.target=ipod()
-comment1.params=memory\ language\ color\ type
-comment1.target=ipod(int,\ java.lang.String,\ java.lang.String,\ java.lang.String)
+comment1.params=memory\ language
+comment1.target=ipod(int,\ java.lang.String)
 comment2.params=
 comment2.target=java.lang.String\ getColor()
 comment3.params=
