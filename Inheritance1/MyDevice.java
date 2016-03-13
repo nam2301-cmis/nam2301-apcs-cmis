@@ -5,8 +5,8 @@ public class MyDevice
     
     public MyDevice()
     {
-        memory=32;
-        language=new String("Thai");
+        this.memory=32;
+        this.language=new String("Thai");
     }
     public MyDevice(int memory,String language)
     {
@@ -14,7 +14,7 @@ public class MyDevice
         this.language=language;
     }
     
-    public String toStrig()
+    public String toString()
     {
         String output = new String("");
         output ="Memory: "+memory+"\n"+"Language "+language;

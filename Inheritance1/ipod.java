@@ -10,36 +10,18 @@ public class ipod extends MyDevice
        this.type=new String("Nano");
     }
     
-    public ipod(int memory,String language)
+    public ipod(int memory,String language,String color,String type)
     {
         super(memory,language);
-       
-    }
-    
-    public String getColor()
-    {
-        return color;
-    }
-    
-    public String getType()
-    {
-        return type;
-    }
-    
-    public void setColor()
-    {
         this.color=color;
-    }
-    
-    public void setType()
-    {
         this.type=type;
     }
+   
     
     public String toString()
     {
         String output = new String("");
-        output =super.toString() + "Color: "+color+"\n"+"Type: "+type;
+        output =super.toString()+"\n" + "Color: "+color+"\n"+"Type: "+type;
         return output;
     }
 }

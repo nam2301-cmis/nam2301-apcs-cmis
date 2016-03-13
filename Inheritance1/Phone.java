@@ -8,37 +8,22 @@ public class Phone extends MyDevice
         //super is getting the info from the main(mydevice)
         super();
         this.owner=new String("Bobby");
+        this.version= 8; 
     }
     
-    public Phone(int memory,String language)
+    public Phone(int memory,String language,String owner,int version)
     {
         super(memory,language);
-    }
-    
-    public String getOwner()
-    {
-        return owner;
-    }
-    
-    public void setOwner(String owner)
-    {
         this.owner=owner;
-    }
-    
-    public int getVersion()
-    {
-        return version;
-    }
-    
-    public void setVersion(int version)
-    {
         this.version=version;
     }
+    
+    
     
     public String toString()
     {
         String output = new String("");
-        output =super.toString() + "Owner: "+getOwner()+"\n"+"Version: "+getVersion();
+        output =super.toString() +"\n" +"Owner: "+owner+"\n"+"Version: "+version;
         return output;
     }
 }
