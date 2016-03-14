@@ -14,22 +14,23 @@ public class AnalogDigitalDriver
         //true
         for(TV aTV:tv)
         {
-            system.out.println(aTV.tvType()+" ....Am I on? "+aTV.getTVon());
+            System.out.println(aTV.tvType()+" ....Am I on? "+aTV.getTVon());
         }
         
         //false
-         for(int i = 0; i < TV.size(); i++)
+         for(int i = 0; i < tv.size(); i++)
         {
-            TV.get(i).setTvOn(false);
+            tv.get(i).setTVOn(false);
         }
         System.out.println();
         for(TV aTV: tv)
         {
-            System.out.println(aTV.tvType() + " Am I on? " + aTV.getTvOn() );
+            System.out.println(aTV.tvType() + " Am I on? " + aTV.getTVon() );
         }
         
+        System.out.println();
         
         System.out.println(tv1.rotateRabbitEars());
-        System.out.println(tv2.connectHDMI());
+        System.out.println(tv2.connectHDTV());
     }
 }
