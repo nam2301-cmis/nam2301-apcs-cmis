@@ -3,10 +3,10 @@ public class TelevisionDriver
 {
     public static void main(String[] args)
     {
-        Plasma plasmatv= new Plasma("Plama Pink",1500.5);
+        Plasma plasmatv= new Plasma();
         DLP dlptv=new DLP();
         LCD ldctv=new LCD();
-        LED ledtv=new LED("LED Neon",954.5);
+        LED ledtv=new LED();
         
         ArrayList<Television> TV= new ArrayList<Television>();
         TV.add(plasmatv);

@@ -70,7 +70,7 @@ public class SuperHeroDriver
             System.out.println();
         }
 
-        System.out.println("\nPrinting contents of capedHeroes...");
+        System.out.println("Printing contents of capedHeroes...");
         for(int row = 0; row < capedHeroes.length; row++)
         {
             for(int col = 0; col < capedHeroes[0].length; col++)
@@ -84,7 +84,7 @@ public class SuperHeroDriver
             System.out.println();
         }
 
-        System.out.println("\nRemaining set of ArrayList heroes...");
+        System.out.println("Remaining set of ArrayList heroes...");
         for(SuperHero eachHero: hero)
         {
             System.out.println(eachHero);
