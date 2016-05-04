@@ -1,32 +1,19 @@
+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+
 /**
- * Write a description of class Pizza here.
+ * Write a description of class Food here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Food
-  
+public class Food extends Actor
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
     /**
-     * Constructor for objects of class Pizza
+     * Act - do whatever the Food wants to do. This method is called whenever
+     * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    public Food()
+    public void act() 
     {
-        
-    }
-
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
-    }
+        // Add your action code here.
+    }    
 }

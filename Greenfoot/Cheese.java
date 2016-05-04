@@ -1,15 +1,15 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Icecream here.
+ * Write a description of class Cheese here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Icecream extends Food
+public class Cheese extends Pizza
 {
     /**
-     * Act - do whatever the Icecream wants to do. This method is called whenever
+     * Act - do whatever the Cheese wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act() 

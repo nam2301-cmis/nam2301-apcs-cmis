@@ -1,10 +1,7 @@
 #BlueJ class context
 comment0.target=Food
-comment0.text=\n\ Write\ a\ description\ of\ class\ Pizza\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment0.text=\n\ Write\ a\ description\ of\ class\ Food\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
 comment1.params=
-comment1.target=Food()
-comment1.text=\n\ Constructor\ for\ objects\ of\ class\ Pizza\n
-comment2.params=y
-comment2.target=int\ sampleMethod(int)
-comment2.text=\n\ An\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\n\ \n\ @param\ \ y\ \ \ a\ sample\ parameter\ for\ a\ method\n\ @return\ \ \ \ \ the\ sum\ of\ x\ and\ y\ \n
-numComments=3
+comment1.target=void\ act()
+comment1.text=\n\ Act\ -\ do\ whatever\ the\ Food\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n
+numComments=2
