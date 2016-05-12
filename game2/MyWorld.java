@@ -40,8 +40,19 @@ public class MyWorld extends World
 
         if(time2 == 0)
         {
-            iceCream ch = new Chocalate();
-            addObject(ch, (int) (Math.random( )*250),0);
+            iceCream Bb = new Blueberry();
+            addObject(Bb, (int) (Math.random( )*250),0);
+        }   
+        
+        else if
+        {
+            iceCream Straw = new Strawberry();
+            addObject(Straw, (int) (Math.random( )*200),0);
+        }
+            iceCream Ch = new Cherry();
+            addObject(Ch, (int) (Math.random( )*150),0);
+            iceCream Lm = new Lemon();
+            addObject(Lm, (int) (Math.random( )*100),0);
             time2 = 500;
             count2 = 360;
         }
