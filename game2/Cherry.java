@@ -1,34 +1,40 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Vanilla here.
+ * Write a description of class Strawberry here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
 public class Cherry extends iceCream
 {
-    /**
-     * Act - do whatever the Vanilla wants to do. This method is called whenever
+      /**
+     * Act - do whatever the Chocalate wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act() 
     {
+
+        super.act();
         checkFall();
         fall();
+
     }    
     private int vSpeed = 0;
     private int acceleration = 1;
 
     public void checkFall()
     {
-        if(onGround())
+        if(getWorld()!=null)
         {
-            vSpeed = 0;
-        }
-        else
-        {
-            fall();
+            if(onGround())
+            {
+                vSpeed = 0;
+            }
+            else
+            {
+                fall();
+            }
         }
     }
 
@@ -40,18 +46,24 @@ public class Cherry extends iceCream
 
     public void fall()
     {
-        setLocation(getX(), getY() + vSpeed);
-        if(vSpeed <=9)
+        if(getWorld()!=null)
         {
-            vSpeed = vSpeed + acceleration;
+            setLocation(getX(), getY() + vSpeed);
+            if(vSpeed <=9)
+            {
+                vSpeed = vSpeed + acceleration;
+            }
         }
 
     }
+
     public void moveToGround(Actor ground)
     {
         int groundHeight = ground.getImage().getHeight();
         int newY = ground.getY() - (groundHeight + getImage().getHeight())/2;
         setLocation(getX(), newY);
 
-    } 
+    }
+    
+    
 }

@@ -35,27 +35,25 @@ public class MyWorld extends World
     private int count = 1;
     private int count2=1;
 
+    Cherry a = new Cherry();
+    iceCream   b = new Vanilla();
+    iceCream  c = new Lemon();
+    iceCream d = new Strawberry();
+    
     public void act() 
     {
-
+        iceCream[] drop = {a,b,c,d};
+        for(int i=0;i>drop.length;i++)
+        {
+        
         if(time2 == 0)
         {
-            iceCream Bb = new Blueberry();
-            addObject(Bb, (int) (Math.random( )*250),0);
-        }   
-        
-        else if
-        {
-            iceCream Straw = new Strawberry();
-            addObject(Straw, (int) (Math.random( )*200),0);
+            iceCream S = new Strawberry();
+            addObject(drop[(int)(Math.random()*4)], (int) (Math.random( )*250),1);
+            time2 = 55;
+            count2 = 100;
         }
-            iceCream Ch = new Cherry();
-            addObject(Ch, (int) (Math.random( )*150),0);
-            iceCream Lm = new Lemon();
-            addObject(Lm, (int) (Math.random( )*100),0);
-            time2 = 500;
-            count2 = 360;
-        }
+
         if(counter())
         {
             time--;
@@ -66,6 +64,7 @@ public class MyWorld extends World
             time2--;
             count2 = 1;
         }
+    }
     }    
 
     private boolean counter()

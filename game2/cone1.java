@@ -14,17 +14,23 @@ public class cone1 extends cone
      */
     public void act() 
     {  
-        checkKeys();   
+        checkKeys();
+        follow();
     }   
+
+    public void follow()
+    {
+
+    }
 
     private void checkKeys()
     {
-        if (Greenfoot.isKeyDown("a") )
+        if (Greenfoot.isKeyDown("Left") )
         {
             moveLeft();
 
         }
-        if (Greenfoot.isKeyDown("d") )
+        if (Greenfoot.isKeyDown("Right") )
         {
             moveRight();
 
@@ -41,7 +47,5 @@ public class cone1 extends cone
     {
         setLocation ( getX() - speed, getY() );
     }
-
-
 
 }
