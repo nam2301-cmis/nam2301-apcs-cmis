@@ -25,12 +25,12 @@ public class cone1 extends cone
 
     private void checkKeys()
     {
-        if (Greenfoot.isKeyDown("a") )
+        if (Greenfoot.isKeyDown("Left") )
         {
             moveLeft();
 
         }
-        if (Greenfoot.isKeyDown("d") )
+        if (Greenfoot.isKeyDown("Right") )
         {
             moveRight();
 

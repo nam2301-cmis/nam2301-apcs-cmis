@@ -34,33 +34,45 @@ public class MyWorld extends World
     private int time2=100;
     private int count = 1;
     private int count2=1;
+    private int count3=1;
+    private int time3=100;
 
     Strawberry a = new Strawberry();
     iceCream    b = new Vanilla();
     iceCream  c = new Chocalate();
+    Trash e = new onion();
+    Trash f = new bananaPeal();
+    Trash g = new Hamburger();
     public void act() 
     {
 
         iceCream[] drop = {a,b,c};
+        Trash[] drop1={e,f,g};
+
         if(time2 == 0)
         {
-            iceCream ch = new Chocalate();
 
             addObject(drop[(int)(Math.random()*3)], (int) (Math.random( )*250),1);
             time2 = 55;
             count2 = 100;
+        }
+         if(time3 == 0)
+        {
+            addObject(drop1[(int)(Math.random()*3)], (int) (Math.random( )*250),1);
+            time3 = 35;
+            count3 = 50;
         }
 
         if(counter())
         {
             time--;
             count = 1;
-        }
-        if(counter())
-        {
             time2--;
             count2 = 1;
+            time3--;
+            count3 = 1;
         }
+
     }    
 
     private boolean counter()

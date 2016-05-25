@@ -1,5 +1,5 @@
 #Greenfoot properties
-#Wed May 18 13:26:53 ICT 2016
+#Wed May 25 13:19:44 ICT 2016
 editor.fx.0.height=700
 target2.width=80
 target8.name=Trash
@@ -25,7 +25,6 @@ target4.x=190
 class.cone1.superclass=cone
 target4.showInterface=false
 target9.type=ClassTarget
-class.cone2.image=cone2.png
 target2.y=190
 target2.x=200
 class.Trash.superclass=greenfoot.Actor
@@ -36,14 +35,17 @@ target10.typeParameters=
 dependency4.from=MyWorld
 dependency5.to=Vanilla
 class.MyWorld.superclass=greenfoot.World
+class.Score.superclass=greenfoot.Actor
 target1.name=iceCream
 target10.showInterface=false
+class.Hamburger.superclass=Trash
 target4.typeParameters=
 target5.name=cone2
 world.lastInstantiated=MyWorld
 mainWindow.width=1616
 readme.width=47
 target9.name=Chocalate
+class.Hamburger.image=hamburger.png
 target5.height=50
 target10.name=MyWorld
 class.Chocalate.image=button-blue.png
@@ -75,7 +77,6 @@ class.bananaPeal.superclass=Trash
 editor.swing.0.width=701
 target6.name=cone1
 target9.height=50
-class.cone2.superclass=cone
 editor.fx.0.width=700
 target11.showInterface=false
 target10.y=10
