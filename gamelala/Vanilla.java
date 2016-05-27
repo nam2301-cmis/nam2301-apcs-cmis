@@ -17,7 +17,9 @@ public class Vanilla extends iceCream
         super.act();
         checkFall();
         fall();
-
+       // MyWorld main= (MyWorld)world;
+      //  Score counter =main.getCounter();
+       // counter.addScore();
     }    
     private int vSpeed = 0;
     private int acceleration = 1;

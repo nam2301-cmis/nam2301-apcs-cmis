@@ -15,6 +15,8 @@ public class Score extends Actor
     int score =0;
     public void act() 
     {
-        setImage(new GreenfootImage("Score : " + score, 25, Color.WHITE, Color.BLUE));
-    }    
+        setImage(new GreenfootImage("Score : " + score, 24, Color.WHITE, Color.BLUE));
+    } 
+    
+    
 }

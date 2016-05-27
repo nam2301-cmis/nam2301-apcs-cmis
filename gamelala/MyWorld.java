@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class MyWorld extends World
 {
-
+    Score counter = new Score();
     /**
      * Constructor for objects of class MyWorld.
      * 
@@ -19,6 +19,11 @@ public class MyWorld extends World
         super(500, 750, 1); 
         prepare();
     }
+    
+    public Score getCounter()
+    {
+        return counter;
+    }
 
     /**
      * Prepare the world for the start of the program.
@@ -28,6 +33,7 @@ public class MyWorld extends World
     {
         cone1 cone1 = new cone1();
         addObject(cone1,132,568);
+        addObject(counter,100,40);
     }
 
     private int time =100;

@@ -20,7 +20,13 @@ public class cone1 extends cone
 
     public void follow()
     {
-
+        if(isTouching(Vanilla.class))
+        {
+            Vanilla v = new Vanilla();
+            World myWorld = getWorld();
+            myWorld.addObject(v, this.getX(), this.getY());
+           // myWorld.removeObject(this.Vanilla);
+        }
     }
 
     private void checkKeys()
@@ -37,7 +43,7 @@ public class cone1 extends cone
         }
     }
 
-    private int speed = 5;
+    private int speed = 8;
     public void moveRight()
     {
         setLocation ( getX() + speed, getY() );
